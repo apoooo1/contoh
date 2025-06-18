@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎀 Ucapan Sidang Lucu 🎓</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(to bottom right, #e0f7ff, #d6f0ff);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .background {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url('https://www.transparenttextures.com/patterns/gray-floral.png');
+      z-index: -1;
+    }
+
+    .container {
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 50, 0.1);
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+    }
+
+    .judul {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.2rem;
+      color: #3399cc;
+      margin-bottom: 1rem;
+    }
+
+    .upload-label {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #99ccff;
+      color: white;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    #upload {
+      display: none;
+    }
+
+    .foto-teman {
+      margin-top: 1rem;
+      max-width: 100%;
+      border-radius: 15px;
+      display: none;
+    }
+
+    .ucapan-box {
+      background-color: #e6f4ff;
+      padding: 1rem;
+      border-radius: 12px;
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+      color: #2c3e50;
+    }
+
+    .buttons {
+      margin-top: 1.5rem;
+    }
+
+    .buttons button {
+      background-color: #7ec8e3;
+      border: none;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      margin: 0.5rem;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
+
+    .buttons button:hover {
+      background-color: #a4dcf0;
+    }
+
+    .emoji {
+      font-size: 2.5rem;
+      margin-top: 1.5rem;
+      animation: float 2s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    @media screen and (max-width: 600px) {
+      .judul {
+        font-size: 1.6rem;
+      }
+      .container {
+        padding: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="background"></div>
+  <div class="container">
+    <h1 class="judul">🎀 Selamat Sidang, <span class="nama">Elvira Kristin Salelatu, S.Mat!</span> 🎓</h1>
+
+    <label for="upload" class="upload-label">halooooooooooo</label>
+    <input type="file" id="upload" accept="image/*" />
+    <img src="vira.jpg" class="foto-teman" alt="Foto Teman" style="display:block;" width="250px;" />
+
+    <div class="ucapan-box">
+      <p id="ucapan"></p>
+    </div>
+
+    <div class="buttons">
+      <button onclick="gantiUcapan()">🔁 Ucapan Lainnya</button>
+      <a href="kesan.html">
+        <button>💌 Tampilkan Kesan</button>
+      </a>
+    </div>
+
+    <div class="emoji" id="emoji">😍</div>
+
+    <audio id="sound" src="sound.mp3" preload="auto"></audio>
+  </div>
+  <script src="ucapan_lucu.js"></script>
+</body>
+</html>

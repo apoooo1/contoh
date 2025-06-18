@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(to bottom right, #dbeafe, #e0f2fe); /* biru pastel */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('https://www.transparenttextures.com/patterns/white-wall-3.png'); /* netral lembut */
+  z-index: -1;
+}
+
+.container {
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+.judul {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.2rem;
+  color: #3b82f6; /* biru pastel elegan */
+  margin-bottom: 1rem;
+}
+
+.foto-teman {
+  margin-top: 1rem;
+  width: 250px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+}
+
+.ucapan-box {
+  background-color: #e0f7ff; /* biru pastel terang */
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #2563eb; /* biru lebih tegas untuk teks */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: all 0.5s ease;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+}
+
+.buttons button {
+  background-color: #60a5fa; /* biru pastel */
+  border: none;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #93c5fd;
+}
+
+.emoji {
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+  animation: float 2s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@media screen and (max-width: 600px) {
+  .judul {
+    font-size: 1.6rem;
+  }
+  .container {
+    padding: 1.5rem;
+  }
+}
+
+#kesan-box {
+  background-color: #dbeafe;
+  color: #1e3a8a; /* biru tua elegan */
+  font-style: italic;
+}
